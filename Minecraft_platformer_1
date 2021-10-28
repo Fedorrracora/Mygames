@@ -1,0 +1,11 @@
+<heard>
+ <meta charset="UTF-8">
+	<title>Minecraft platformer 1</title>
+	<html lang="ru" style="background-color: #000000;">
+</heard>
+<body text="#ffffff" link="#ffffff" vlink="#ffffff" alink="#ffffff">
+<iframe src="Minecraft_platformers/v1/index.html" allowtransparency="true" width="100%" height="90%" frameborder="0" scrolling="no" allowfullscreen></iframe> 
+<br>
+<center><a href="index.html"><h3>домой</h3></a>
+</center>
+</body> 
