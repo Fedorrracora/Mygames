@@ -21,12 +21,16 @@ class Audio {
         },
 	{
           opcode: 'doun',
-          blockType: Scratch.BlockType.BOOLEAN,
-          text: 'stepen [DOWN]',
+          blockType: Scratch.BlockType.REPORTER,
+          text: 'button [DOWN] [STR]',
 	  arguments: {
 		DOWN: {
 			type: Scratch.ArgumentType.NUMBER,
 			defaultValue: 0
+		},
+		STR: {
+			type: Scratch.ArgumentType.STRING,
+			defaultValue: ''
 		}
 	  }
         }
@@ -37,12 +41,14 @@ class Audio {
     return Number(args.COUNT)**Number(args.STEPEN);
   }
   doun(args) {
-	var a = false;
-	document.addEventListener('keydown', test);
-	function test(e) {
-		a = true;
+	var aboba = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'a', 'b', 'Enter'];
+	if (args.STR === aboba[args.DOWN]) {
+		return args.DOWN + 1;
 	}
-	return a;
+	else {
+		return 0;
+	}
+	return -1;
   }
 }
 Scratch.extensions.register(new Audio());
