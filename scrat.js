@@ -7,12 +7,12 @@ class Audio {
         {
           opcode: 'step',
           blockType: Scratch.BlockType.REPORTER,
-          text: '[COUNT] steren [STEPEN]',
+          text: '[COUNT] stepen [STEPEN]',
 	  arguments: {
 		COUNT: {
 			type: Scratch.ArgumentType.NUMBER,
 			defaultValue: 0
-		}
+		},
 		STEPEN: {
 			type: Scratch.ArgumentType.NUMBER,
 			defaultValue: 0
