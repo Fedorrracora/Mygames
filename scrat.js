@@ -75,7 +75,7 @@ class Audio {
 	return -1;
   }
   tob(args) {
-  	var allbuttons = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'g', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 'f', 't', 'u', 'v', 'w', 'x', 'y', 'z', '/', '.', ',', ';', "'", ']', '[', '<', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '='];
+  	var allbuttons = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'Enter', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'g', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 'f', 't', 'u', 'v', 'w', 'x', 'y', 'z', '/', '.', ',', ';', "'", ']', '[', '<', '`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '-', '=', ' '];
   	return allbuttons[Number(args.NOM)];
   }
 }
