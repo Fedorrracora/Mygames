@@ -33,7 +33,7 @@ class Audio {
 					defaultValue: ''
 				}
 			}
-        }
+        },
         {
         opcode: 'tob',
         blockType: Scratch.BlockType.REPORTER,
