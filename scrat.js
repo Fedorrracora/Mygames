@@ -18,12 +18,26 @@ class Audio {
 			defaultValue: 0
 		}
 	  }
+        },
+	{
+          opcode: 'doun',
+          blockType: Scratch.BlockType.COMMAND,
+          text: 'stepen [DOWN]',
+	  arguments: {
+		DOWN: {
+			type: Scratch.ArgumentType.NUMBER,
+			defaultValue: 0
+		}
+	  }
         }
       ]
     };
   }
   step(args) {
     return Number(args.COUNT)**Number(args.STEPEN);
+  }
+  doun(args) {
+	return args.DOWN;
   }
 }
 Scratch.extensions.register(new Audio());
