@@ -38,7 +38,7 @@ class Audio {
   }
   doun(args) {
 	var a = false;
-	window.addEventListener('keydown', test);
+	document.addEventListener('keydown', test);
 	function test(e) {
 		a = true;
 	}
