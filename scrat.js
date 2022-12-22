@@ -37,11 +37,12 @@ class Audio {
     return Number(args.COUNT)**Number(args.STEPEN);
   }
   doun(args) {
+	var a = false;
 	window.addEventListener('keydown', test);
 	function test(e) {
-		return true;
+		a = true;
 	}
-	return false;
+	return a;
   }
 }
 Scratch.extensions.register(new Audio());
