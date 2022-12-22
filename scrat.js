@@ -21,7 +21,7 @@ class Audio {
         },
 	{
           opcode: 'doun',
-          blockType: Scratch.BlockType.COMMAND,
+          blockType: Scratch.BlockType.BOOLEAN,
           text: 'stepen [DOWN]',
 	  arguments: {
 		DOWN: {
@@ -37,7 +37,11 @@ class Audio {
     return Number(args.COUNT)**Number(args.STEPEN);
   }
   doun(args) {
-	return args.DOWN;
+	window.addEventListener('keydown', test);
+	function test(e) {
+		return true;
+	}
+	return false;
   }
 }
 Scratch.extensions.register(new Audio());
