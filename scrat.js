@@ -45,7 +45,7 @@ class Audio {
 	if (args.STR === aboba[args.DOWN]) {
 		return args.DOWN + 1;
 	}
-	else if (args.STR === aboba[args.DOWN]) {
+	else if (args.STR === aboba[0]) {
 		if (args.DOWN !== 0) {
 			if (aboba[args.DOWN-1] === aboba[0]) {
 				return 2;
